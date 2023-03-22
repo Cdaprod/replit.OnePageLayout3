@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elegant Page</title>
+    <style>
+      /* Reset the default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Set the background color */
+      body {
+        background-color: #222;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Add a container for the cards */
+      .card-container {
+        display: flex;
+        overflow-x: scroll;
+        height: 50vh;
+        margin-bottom: 50px;
+      }
+      
+      /* Add the cards */
+      .card {
+        background-color: #333;
+        color: #fff;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        width: 400px;
+        margin-right: 30px;
+      }
+      .card:last-child {
+        margin-right: 0;
+      }
+      .card h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      /* Add a hidden navbar button */
+      .navbar-button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: #333;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 30px 0 0 0;
+        box-shadow: -5px -5px 10px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Hide the scrollbar */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor commodo libero, sit amet commodo lectus malesuada sit amet. Mauris accumsan ante nec commodo venenatis.</p>
+      </div>
+      <div class="card">
+        <h2>Card 2</h2>
+        <p>Nullam vulputate diam quis ipsum elementum vehicula. Aliquam semper nisi eget purus egestas, sed rhoncus velit suscipit. Nulla tempus ultricies sapien, eu bibendum nunc laoreet sit amet.</p>
+      </div>
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>Curabitur euismod volutpat odio, sed maximus enim commodo vel. Vivamus euismod tristique orci id malesuada. Nunc convallis lacinia mauris, vel pharetra elit dignissim non.</p>
+      </div>
+      <div class="card">
+        <h2>Card 4</h2>
+        <p>Pellentesque interdum nibh at bibendum faucibus. Etiam imperdiet tellus ac justo varius,</p>
+      </div>
+    </div>
+  </body>
+</html>
